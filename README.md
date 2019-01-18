@@ -4,5 +4,5 @@
 
 2. Create a change log entry for the release:
 
-- You'll need an [access token for the GitHub API](https://github.com/settings/tokens/new?description=GitHub%20Changelog%20Generator%20token). Save it to this environment variable: `export GITHUB_AUTH="..."`
+- You'll need an [access token for the GitHub API](https://github.com/settings/tokens/new?description=GitHub%20Changelog%20Generator%20token). Since this is a public repository, you only need `public_repo` access for the token. Save it to this environment variable: `export GITHUB_AUTH="..."`
 - Run `yarn changelog`. The command will find all the labeled pull requests merged since the last release and group them by the label and affected packages, and create a change log entry with all the changes and links to PRs and their authors. Copy and paste it to `CHANGELOG.md`.
