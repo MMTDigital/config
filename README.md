@@ -16,9 +16,15 @@ Clone the repo with git clone https://github.com/MMTDigital/config
   lerna bootstrap
 ```
 
+## Submitting a Pull Request
+
+Good pull requests, such as patches, improvements, and new features, are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.
+
+In order to help generate useful documentation we're adhereing to https://www.conventionalcommits.org/en/v1.0.0-beta.2/
+
 ## Cutting a Release
 
-1. Tag all merged pull requests that go into the release with the relevant milestone. Each merged PR should also be labeled with one of the [labels](https://github.com/MMTDigital/config/labels) named `tag: ...` to indicate what kind of change it is.
+1. Each PR should also be labeled with one of the [labels](https://github.com/MMTDigital/config/labels) named `tag: ...` to indicate what kind of change it is.
 
 2. Create a change log entry for the release:
 
