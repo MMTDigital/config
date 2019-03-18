@@ -13,7 +13,15 @@ module.exports = {
         parallel: true,
         sourceMap: true
       }),
-      new OptimizeCSSAssetsPlugin()
+      new OptimizeCSSAssetsPlugin({
+        assetNameRegExp: /\.css$/g,
+        cssProcessorOptions: {
+          discardComments: {
+            removeAll: true
+          },
+          zindex: false
+        }
+      })
     ]
   }
 }
